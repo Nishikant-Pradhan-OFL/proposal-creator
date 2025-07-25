@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Proposal Creator</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" href="assets/logo.png" type="image/png" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+</head>
+<body>
+  <div class="container">
+    <img src="assets/logo.png" alt="Logo" class="logo" />
+    <h1>Proposal Creator 📝</h1>
+
+    <form id="proposalForm">
+      <label>Client Name:</label>
+      <input type="text" id="clientName" required />
+
+      <label>Project Title:</label>
+      <input type="text" id="projectTitle" required />
+
+      <label>Project Description:</label>
+      <textarea id="projectDescription" rows="4" required></textarea>
+
+      <label>Timeline:</label>
+      <input type="text" id="timeline" required />
+
+      <label>Budget:</label>
+      <input type="text" id="budget" required />
+
+      <button type="submit">Generate Proposal</button>
+    </form>
+
+    <div id="proposalOutput" class="proposal" style="display: none;"></div>
+    <button id="downloadBtn" style="display:none;">Download TXT</button>
+    <button id="pdfBtn" style="display:none;">Download PDF</button>
+  </div>
+
+  <footer>
+    &copy; 2025 Nishikant Creations™ | All rights reserved
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
